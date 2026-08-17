@@ -26,8 +26,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const evalDir = path.dirname(fileURLToPath(import.meta.url));
-const repoRoot = path.dirname(evalDir);
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const evalDir = path.dirname(scriptDir); // bundle layout: tasks/, runs/, fixtures/ live beside harness/
+const repoRoot = evalDir;
 
 const args = process.argv.slice(2);
 const taskId = args.find((a) => !a.startsWith("--"));
@@ -147,7 +148,7 @@ if (exitCode !== 0 || !fs.existsSync(outPath)) {
 }
 
 // --- grade ------------------------------------------------------------------
-const gradeArgs = [path.join(evalDir, "grade.mjs"), taskId, outPath, "--recalc"];
+const gradeArgs = [path.join(scriptDir, "grade.mjs"), taskId, outPath, "--recalc"];
 if (originalCopy) gradeArgs.push("--original", originalCopy);
 const grade = spawnSync("node", gradeArgs, { stdio: "inherit" });
 process.exit(grade.status ?? 0);

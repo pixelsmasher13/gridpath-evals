@@ -18,7 +18,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const evalDir = path.dirname(fileURLToPath(import.meta.url));
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const evalDir = path.dirname(scriptDir); // bundle layout: tasks/, runs/, fixtures/ live beside harness/
 
 const args = process.argv.slice(2);
 const taskId = args.find((a) => !a.startsWith("--"));
@@ -112,7 +113,7 @@ fs.copyFileSync(outPath, path.join(runDir, "output.xlsx"));
 console.log(`output: ${path.join(runDir, "output.xlsx")} (${Math.round(wallMs / 1000)}s)`);
 
 // Grade.
-const gradeArgs = [path.join(evalDir, "grade.mjs"), taskId, path.join(runDir, "output.xlsx"), "--recalc"];
+const gradeArgs = [path.join(scriptDir, "grade.mjs"), taskId, path.join(runDir, "output.xlsx"), "--recalc"];
 if (startCopy) gradeArgs.push("--original", startCopy);
 const grade = spawnSync("node", gradeArgs, { stdio: "inherit" });
 process.exit(grade.status ?? 0);
