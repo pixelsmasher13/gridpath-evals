@@ -22,9 +22,10 @@ vs 7/15. **Quality is effectively tied. The differences are speed (5–15×),
 output tokens (3–36×), and fidelity: Claude Code silently dropped original
 workbook parts (charts, conditional formatting, validation, defined names)
 in 2 of 5 edit runs — `parts_preserved` in the grade reports; GridPath
-dropped none in any run.** Claude Code's 15 runs cost $118.42 metered;
-GridPath ran on a flat subscription (compare output tokens for a
-price-independent view).
+dropped none in any run.** Claude Code's 15 runs cost $118.42 metered.
+GridPath ran on a flat subscription; pricing its exact token usage at the
+same standard API rates (cache writes at the 1-hour rate) gives a metered
+equivalent of **$9.21** — 13× cheaper for the same work.
 
 ## Layout
 
