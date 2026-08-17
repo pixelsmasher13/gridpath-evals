@@ -1,0 +1,68 @@
+{
+  "task": "aapl-forecast",
+  "output": "runs/aapl-forecast/2026-08-17T02-23-35-cc/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 8,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Quarterly Model!row 11 \"Total Net Sales\" → 416161",
+      "type": "label_value",
+      "label": "revenue|net sales",
+      "why": "FY2025A total revenue in $mm (or 416.161 in $bn — grader tries magnitude variants); 'net sales' is Apple's own P&L terminology"
+    },
+    {
+      "status": "pass",
+      "detail": "Quarterly Model!row 35 \"Diluted EPS\" → 7.46499604307225",
+      "type": "label_value",
+      "label": "eps",
+      "why": "FY2025A diluted EPS"
+    },
+    {
+      "status": "pass",
+      "detail": "Quarterly Model!row 17 has formulas",
+      "type": "label_formula",
+      "label": "gross profit|gross margin",
+      "why": "derived, not hardcoded"
+    },
+    {
+      "status": "pass",
+      "detail": "Quarterly Model!row 35 has formulas",
+      "type": "label_formula",
+      "label": "eps",
+      "why": "EPS must divide NI by shares, not be typed in"
+    },
+    {
+      "status": "pass",
+      "detail": "Cover!row 8",
+      "type": "label_exists",
+      "label": "2027|fy27",
+      "why": "forecast years present"
+    },
+    {
+      "status": "pass",
+      "detail": "Cover!row 3",
+      "type": "label_exists",
+      "label": "2028|fy28",
+      "why": "forecast horizon reaches 2028"
+    },
+    {
+      "status": "pass",
+      "detail": "647 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "quarterly x 3 years should be formula-driven"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "no formula errors anywhere"
+    }
+  ]
+}

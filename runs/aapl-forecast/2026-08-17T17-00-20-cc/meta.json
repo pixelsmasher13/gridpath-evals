@@ -1,0 +1,16 @@
+{
+  "task": "aapl-forecast",
+  "harness": "claude-code",
+  "model": "claude-sonnet-5",
+  "wall_ms": 1213991,
+  "num_turns": 52,
+  "duration_ms": 1212893,
+  "total_cost_usd": 7.376473,
+  "usage": {
+    "input_tokens": 7296,
+    "output_tokens": 130069,
+    "cache_read_input_tokens": 4801564,
+    "cache_creation_input_tokens": 152482,
+    "web_search_requests": 0
+  }
+}

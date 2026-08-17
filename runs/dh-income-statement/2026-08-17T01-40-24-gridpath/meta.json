@@ -1,0 +1,13 @@
+{
+  "harness": "gridpath",
+  "prompt": "can you put together a model on delivery hero income statement with details on growth",
+  "model": "claude-sonnet-5",
+  "effort": "medium",
+  "duration_ms": 239820,
+  "batches": 1,
+  "accepted_batches": 1,
+  "input_tokens": 18,
+  "output_tokens": 25056,
+  "saved": true,
+  "status": "done"
+}
