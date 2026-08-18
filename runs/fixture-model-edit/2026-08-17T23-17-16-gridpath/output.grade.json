@@ -10,7 +10,7 @@
   "results": [
     {
       "status": "pass",
-      "detail": "Model!row 12 \"Eval marker\" \u2192 42",
+      "detail": "Model!row 11 \"Eval marker\" \u2192 42",
       "type": "label_value",
       "label": "Eval marker",
       "why": "the requested edit landed"

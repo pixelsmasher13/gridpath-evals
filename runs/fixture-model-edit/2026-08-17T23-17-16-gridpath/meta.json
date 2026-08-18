@@ -1,0 +1,13 @@
+{
+  "harness": "gridpath",
+  "prompt": "On the 'Model' sheet, add a memo row at the bottom labeled 'Eval marker' with the value 42 in the cell next to the label. Change nothing else.",
+  "model": "claude-sonnet-5",
+  "effort": "xhigh",
+  "duration_ms": 6145,
+  "batches": 1,
+  "accepted_batches": 1,
+  "input_tokens": 4,
+  "output_tokens": 302,
+  "saved": true,
+  "status": "done"
+}

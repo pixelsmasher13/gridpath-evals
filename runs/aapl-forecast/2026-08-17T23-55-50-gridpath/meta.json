@@ -1,0 +1,13 @@
+{
+  "harness": "gridpath",
+  "prompt": "build an Apple (AAPL) income statement financial forecast for 2026-2028 with quarterly breakdowns",
+  "model": "claude-sonnet-5",
+  "effort": "xhigh",
+  "duration_ms": 1182500,
+  "batches": 1,
+  "accepted_batches": 1,
+  "input_tokens": 54,
+  "output_tokens": 125971,
+  "saved": true,
+  "status": "done"
+}

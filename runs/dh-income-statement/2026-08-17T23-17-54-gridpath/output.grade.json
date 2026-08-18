@@ -1,0 +1,75 @@
+{
+  "task": "dh-income-statement",
+  "output": "output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 6,
+    "fail": 3,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Sheet1!row 6 \"Revenue\" \u2192 14060",
+      "type": "label_value",
+      "label": "revenue",
+      "why": "FY2025 IFRS revenue ~14,060 (any column may hold it)"
+    },
+    {
+      "status": "pass",
+      "detail": "Sheet1!row 19 \"Net income (loss)\" \u2192 -882.4",
+      "type": "label_value",
+      "label": "net income|net loss",
+      "why": "FY2024 reported net loss ties within 1.5%"
+    },
+    {
+      "status": "fail",
+      "detail": "label found but every cell is hardcoded",
+      "type": "label_formula",
+      "label": "gross profit",
+      "why": "gross profit must be derived by formula, not hardcoded"
+    },
+    {
+      "status": "pass",
+      "detail": "Sheet1!row 1",
+      "type": "label_exists",
+      "label": "growth|yoy|y/y",
+      "why": "the ask was 'details on growth'"
+    },
+    {
+      "status": "fail",
+      "detail": "nothing matches /cagr/i",
+      "type": "label_exists",
+      "label": "cagr",
+      "why": "multi-year growth summary"
+    },
+    {
+      "status": "pass",
+      "detail": "Sheet1!row 2",
+      "type": "label_exists",
+      "label": "source",
+      "why": "rule 22: sources/notes provenance block"
+    },
+    {
+      "status": "fail",
+      "detail": "Sheet1!row 44 \"Check: vs. reported Revenue (should be \u22480)\" has |1.20000000000073| > 1",
+      "type": "check_rows_zero",
+      "label": "check",
+      "why": "rule 21: check rows must tie to ~0 (skipped if no check rows, reported as missing)"
+    },
+    {
+      "status": "pass",
+      "detail": "111 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "a model, not a data dump"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "no #REF!/#DIV/0!/#VALUE! anywhere"
+    }
+  ]
+}
