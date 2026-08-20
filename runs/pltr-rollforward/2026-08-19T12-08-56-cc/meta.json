@@ -1,0 +1,14 @@
+{
+  "task": "pltr-rollforward",
+  "harness": "claude-code",
+  "model": "claude-sonnet-5",
+  "wall_ms": 1015866,
+  "num_turns": 77,
+  "duration_ms": 1014253,
+  "total_cost_usd": 8.7635795,
+  "usage": {
+    "input_tokens": 5055,
+    "output_tokens": 88319,
+    "cache_read_input_tokens": 8711277
+  }
+}

@@ -201,6 +201,19 @@ function gradeAssertion(a, rows, ctx) {
         ? { status: "pass", detail: `${withFormula.sheet}!row ${withFormula.row} has formulas` }
         : { status: "fail", detail: "label found but every cell is hardcoded" };
     }
+    case "label_absent": {
+      // Inverse of label_exists — the roll-forward case: a stale marker
+      // (e.g. a "Q2'26E" estimate header) MUST be gone after the update.
+      // Catches the agent that appends new data without retiring the old
+      // labels, leaving a workbook that lies about what's actual.
+      const re = new RegExp(a.label, "i");
+      const hit = scoped.find(
+        (r) => (r.label && re.test(r.label)) || r.cells.some((c) => typeof c.value === "string" && re.test(c.value)),
+      );
+      return hit
+        ? { status: "fail", detail: `stale /${a.label}/i still present at ${hit.sheet}!row ${hit.row}` }
+        : { status: "pass", detail: `no /${a.label}/i anywhere` };
+    }
     case "label_exists": {
       const re = new RegExp(a.label, "i");
       const hit = scoped.find(

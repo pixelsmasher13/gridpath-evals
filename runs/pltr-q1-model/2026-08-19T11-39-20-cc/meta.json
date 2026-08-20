@@ -1,0 +1,14 @@
+{
+  "task": "pltr-q1-model",
+  "harness": "claude-code",
+  "model": "claude-sonnet-5",
+  "wall_ms": 1240954,
+  "num_turns": 19,
+  "duration_ms": 913295,
+  "total_cost_usd": 13.319925000000003,
+  "usage": {
+    "input_tokens": 452,
+    "output_tokens": 97429,
+    "cache_read_input_tokens": 2607773
+  }
+}
