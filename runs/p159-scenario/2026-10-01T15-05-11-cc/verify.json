@@ -1,0 +1,15 @@
+{
+  "run": "2026-10-01T15-05-11-cc",
+  "task": "p159-scenario",
+  "harness": "claude-code",
+  "wall_s": 160.7,
+  "turns": 19,
+  "out_tokens": 17104,
+  "cost": 1.62,
+  "inputs_ok": "12/12",
+  "stray_changes": 0,
+  "stray_sample": [],
+  "fy2027_recalculated": 135720.43755377777,
+  "fy2027_ok": true,
+  "reported_right_answer": true
+}

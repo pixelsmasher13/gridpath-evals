@@ -1,0 +1,75 @@
+{
+  "task": "fixture-quarterly-totals",
+  "output": "runs/fixture-quarterly-totals/2026-09-30T18-26-25-cc/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 9,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Data!row 10 \"FY2025 total\" \u2192 6055",
+      "type": "label_value",
+      "label": "FY2025 total",
+      "why": "revenue total correct"
+    },
+    {
+      "status": "pass",
+      "detail": "Data!row 10 \"FY2025 total\" \u2192 3754",
+      "type": "label_value",
+      "label": "FY2025 total",
+      "why": "COGS total correct"
+    },
+    {
+      "status": "pass",
+      "detail": "Data!row 10 has formulas",
+      "type": "label_formula",
+      "label": "FY2025 total",
+      "why": "totals are formulas"
+    },
+    {
+      "status": "pass",
+      "detail": "Data!row 2 has formulas",
+      "type": "label_formula",
+      "label": "^Q1-24$",
+      "why": "margin column is a formula"
+    },
+    {
+      "status": "pass",
+      "detail": "Data!row 9 \"Q4-25\" \u2192 0.380120481927711",
+      "type": "label_value",
+      "label": "^Q4-25$",
+      "why": "margin evaluates (1-1029/1660)"
+    },
+    {
+      "status": "pass",
+      "detail": "26 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "16 existing + 8 margins + 2 totals"
+    },
+    {
+      "status": "pass",
+      "detail": "all 16 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "fidelity"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 2 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "valid workbook"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "no errors anywhere"
+    }
+  ]
+}

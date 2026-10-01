@@ -1,0 +1,43 @@
+{
+  "task": "p159-scenario",
+  "harness": "claude-code+gridpath-mcp",
+  "model": "claude-sonnet-5-5",
+  "wall_ms": 29173,
+  "num_turns": 10,
+  "duration_ms": 27849,
+  "total_cost_usd": 0.4884345,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 23669,
+    "cache_read_input_tokens": 388951,
+    "output_tokens": 2236,
+    "output_tokens_details": {
+      "thinking_tokens": 166
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 23669,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 523,
+        "cache_read_input_tokens": 64706,
+        "cache_creation_input_tokens": 735,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 735
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "is_error": false
+}

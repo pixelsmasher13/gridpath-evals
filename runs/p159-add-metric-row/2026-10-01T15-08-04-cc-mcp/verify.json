@@ -1,0 +1,15 @@
+{
+  "run": "2026-10-01T15-08-04-cc-mcp",
+  "task": "p159-add-metric-row",
+  "harness": "claude-code+gridpath-mcp",
+  "wall_s": 51.9,
+  "turns": 14,
+  "out_tokens": 3715,
+  "cost": 0.66,
+  "label_at_row_62": true,
+  "new_row_formulas_ok": "26/26",
+  "existing_formulas": 55003,
+  "formulas_lost": 0,
+  "values_changed": 0,
+  "sample": []
+}

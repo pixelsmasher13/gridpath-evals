@@ -1,0 +1,103 @@
+{
+  "task": "fixture-insert-row",
+  "output": "runs/fixture-insert-row/2026-09-30T18-31-09-cc/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 13,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Model!row 9",
+      "type": "label_exists",
+      "label": "^Opex$",
+      "why": "row added"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 10 \"Gross profit\" \u2192 929",
+      "type": "label_value",
+      "label": "^Gross profit$",
+      "why": "FY2024A GP = 5155-3196-1030"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 10 has formulas",
+      "type": "label_formula",
+      "label": "^Gross profit$",
+      "why": "GP stays a formula"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 11 \"Gross margin\" \u2192 0.180213385063046",
+      "type": "label_value",
+      "label": "^Gross margin$",
+      "why": "margin recomputes off new GP"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 7 \"Revenue\" \u2192 7508.2",
+      "type": "label_value",
+      "label": "^Revenue$",
+      "why": "forecast revenue still resolves GrowthRate after the shift"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 9 \"Opex\" \u2192 1501.64",
+      "type": "label_value",
+      "label": "^Opex$",
+      "why": "forecast opex formula evaluates"
+    },
+    {
+      "status": "pass",
+      "detail": "19 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "16 existing + 3 forecast opex"
+    },
+    {
+      "status": "pass",
+      "detail": "all 16 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "fidelity"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/worksheets/sheet2.xml contains /conditionalFormatting/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "CF survives"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/worksheets/sheet2.xml contains /dataValidation/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "DV survives"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/workbook.xml contains /GrowthRate/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "defined name survives"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 2 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "valid workbook"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "no errors introduced"
+    }
+  ]
+}

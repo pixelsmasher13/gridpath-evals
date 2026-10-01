@@ -1,0 +1,47 @@
+{
+  "task": "p159-scenario",
+  "output": "runs/p159-scenario/2026-10-01T15-04-30-cc-mcp/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 5,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Assumptions!row 60 \"Revenue per utilized external GW / year, $mm\" \u2192 11000",
+      "type": "label_value",
+      "label": "^Revenue per utilized external GW",
+      "why": "revenue-per-GW input landed"
+    },
+    {
+      "status": "pass",
+      "detail": "Assumptions!row 58 \"Utilization of external capacity, %\" \u2192 0.93",
+      "type": "label_value",
+      "label": "^Utilization of external capacity",
+      "why": "utilization input landed"
+    },
+    {
+      "status": "pass",
+      "detail": "all 76 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "fidelity"
+    },
+    {
+      "status": "pass",
+      "detail": "55003 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "no formula was replaced by a value"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 12 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "valid workbook"
+    }
+  ]
+}

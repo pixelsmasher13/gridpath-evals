@@ -1,0 +1,16 @@
+{
+  "task": "dh-income-statement",
+  "harness": "claude-code",
+  "model": "claude-sonnet-5",
+  "wall_ms": 1118791,
+  "num_turns": 80,
+  "duration_ms": 1117360,
+  "total_cost_usd": 8.938752499999998,
+  "usage": {
+    "input_tokens": 5742,
+    "output_tokens": 104020,
+    "cache_read_input_tokens": 8463891,
+    "cache_creation_input_tokens": 180066,
+    "web_search_requests": 0
+  }
+}

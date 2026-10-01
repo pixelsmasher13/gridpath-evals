@@ -1,0 +1,21 @@
+{
+  "run": "2026-10-01T15-04-30-cc-mcp",
+  "task": "p159-scenario",
+  "harness": "claude-code+gridpath-mcp",
+  "wall_s": 29.2,
+  "turns": 10,
+  "out_tokens": 2236,
+  "cost": 0.49,
+  "inputs_ok": "12/12",
+  "stray_changes": 67,
+  "stray_sample": [
+    "ModelSummary!Z9",
+    "ModelSummary!AA9",
+    "ModelSummary!AB9",
+    "ModelSummary!AC9",
+    "ModelSummary!AD9"
+  ],
+  "fy2027_recalculated": 135720.43755377777,
+  "fy2027_ok": true,
+  "reported_right_answer": true
+}

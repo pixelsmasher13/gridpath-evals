@@ -1,0 +1,12 @@
+{
+  "harness": "gridpath",
+  "prompt": "update this model with Palantir's Q2 2026 actual results",
+  "model": "claude-sonnet-5",
+  "effort": "xhigh",
+  "duration_ms": 518661,
+  "batches": 1,
+  "input_tokens": 44,
+  "output_tokens": 47599,
+  "saved": true,
+  "status": "done"
+}

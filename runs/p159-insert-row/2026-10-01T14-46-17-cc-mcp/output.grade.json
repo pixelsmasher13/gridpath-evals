@@ -1,0 +1,47 @@
+{
+  "task": "p159-insert-row",
+  "output": "runs/p159-insert-row/2026-10-01T14-46-17-cc-mcp/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 5,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Update Log!row 11 \"Eval insert marker\" \u2192 42",
+      "type": "label_value",
+      "label": "Eval insert marker",
+      "why": "the row landed"
+    },
+    {
+      "status": "pass",
+      "detail": "all 76 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "fidelity"
+    },
+    {
+      "status": "pass",
+      "detail": "55003 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "formulas survive"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 12 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "valid workbook"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "no errors on the edited sheet"
+    }
+  ]
+}

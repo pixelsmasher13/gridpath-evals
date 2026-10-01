@@ -1,0 +1,15 @@
+{
+  "run": "2026-10-01T15-09-08-cc",
+  "task": "p159-add-metric-row",
+  "harness": "claude-code",
+  "wall_s": 85.6,
+  "turns": 16,
+  "out_tokens": 9805,
+  "cost": 1.36,
+  "label_at_row_62": true,
+  "new_row_formulas_ok": "26/26",
+  "existing_formulas": 55003,
+  "formulas_lost": 0,
+  "values_changed": 0,
+  "sample": []
+}

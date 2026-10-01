@@ -1,0 +1,47 @@
+{
+  "task": "p159-model-edit",
+  "output": "runs/p159-model-edit/2026-10-01T14-59-00-cc/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 5,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Update Log!row 70 \"Eval marker\" \u2192 42",
+      "type": "label_value",
+      "label": "Eval marker",
+      "why": "the requested edit landed"
+    },
+    {
+      "status": "pass",
+      "detail": "all 76 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "institutional content must survive the round-trip"
+    },
+    {
+      "status": "pass",
+      "detail": "55003 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "the model's formulas must survive AS formulas"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 12 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "output parses as a valid workbook"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "the edited sheet gained no formula errors"
+    }
+  ]
+}

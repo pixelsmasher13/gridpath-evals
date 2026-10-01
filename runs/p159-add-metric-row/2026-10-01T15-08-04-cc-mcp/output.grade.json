@@ -1,0 +1,47 @@
+{
+  "task": "p159-add-metric-row",
+  "output": "runs/p159-add-metric-row/2026-10-01T15-08-04-cc-mcp/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 5,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Assumptions!row 62",
+      "type": "label_exists",
+      "label": "Capacity-based Azure revenue per ending GW",
+      "why": "the row landed"
+    },
+    {
+      "status": "pass",
+      "detail": "Assumptions!row 62 has formulas",
+      "type": "label_formula",
+      "label": "Capacity-based Azure revenue per ending GW",
+      "why": "new row holds formulas"
+    },
+    {
+      "status": "pass",
+      "detail": "all 76 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "fidelity"
+    },
+    {
+      "status": "pass",
+      "detail": "55029 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "55,003 existing + 26 new"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 12 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "valid workbook"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "task": "p159-insert-row",
+  "harness": "claude-code",
+  "model": "claude-sonnet-5-5",
+  "wall_ms": 46054,
+  "num_turns": 8,
+  "duration_ms": 42777,
+  "total_cost_usd": 1.1774215,
+  "usage": {
+    "input_tokens": 16,
+    "cache_creation_input_tokens": 80518,
+    "cache_read_input_tokens": 477997,
+    "output_tokens": 5282,
+    "output_tokens_details": {
+      "thinking_tokens": 1334
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 80518,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 348,
+        "cache_read_input_tokens": 79632,
+        "cache_creation_input_tokens": 886,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 886
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "is_error": false
+}

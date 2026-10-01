@@ -1,0 +1,68 @@
+{
+  "task": "fixture-model-edit",
+  "output": "output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 8,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Model!row 11 \"Eval marker\" \u2192 42",
+      "type": "label_value",
+      "label": "Eval marker",
+      "why": "the requested edit landed"
+    },
+    {
+      "status": "pass",
+      "detail": "all 16 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "chart + drawings + parts OUTSIDE library feature models must survive \u2014 this is the discriminating axis"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/worksheets/sheet2.xml contains /conditionalFormatting/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "the margin color scale survives inside the edited sheet's XML"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/worksheets/sheet2.xml contains /dataValidation/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "the scenario dropdown survives"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/workbook.xml contains /GrowthRate/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "the defined name survives (forecast formulas depend on it)"
+    },
+    {
+      "status": "pass",
+      "detail": "16 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "all 16 live formulas must survive AS formulas \u2014 replacing them with computed values kills the model (observed: 1 of 5 CC runs did exactly this)"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 2 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "output parses as a valid workbook"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "the edited sheet gained no formula errors"
+    }
+  ]
+}

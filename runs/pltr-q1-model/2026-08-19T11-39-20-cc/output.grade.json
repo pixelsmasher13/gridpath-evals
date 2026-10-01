@@ -1,0 +1,82 @@
+{
+  "task": "pltr-q1-model",
+  "output": "output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 10,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 4",
+      "type": "label_exists",
+      "label": "q1",
+      "why": "quarterly granularity present"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 4",
+      "type": "label_exists",
+      "label": "2027|fy27",
+      "why": "forecast horizon reaches FY2027"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 3",
+      "type": "label_exists",
+      "label": "assumption",
+      "why": "explicit assumptions block driving the forecast"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 7",
+      "type": "label_exists",
+      "label": "revenue",
+      "why": "income statement present"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 8",
+      "type": "label_exists",
+      "label": "government|commercial|international",
+      "why": "segment split as disclosed"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 25",
+      "type": "label_exists",
+      "label": "growth|yoy|qoq",
+      "why": "growth rows present"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 3",
+      "type": "label_exists",
+      "label": "source",
+      "why": "sources block for provenance"
+    },
+    {
+      "status": "pass",
+      "detail": "Income Statement!row 13 has formulas",
+      "type": "label_formula",
+      "label": "revenue",
+      "why": "forecast revenue must be formula-driven off assumptions"
+    },
+    {
+      "status": "pass",
+      "detail": "663 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "a live model, not a static table \u2014 the roll-forward test needs formulas to preserve"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "fixture must open clean"
+    }
+  ]
+}

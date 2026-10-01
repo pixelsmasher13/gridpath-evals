@@ -1,0 +1,90 @@
+{
+ "task": "dh-income-statement",
+ "method": "2 independent blind judges, 10 anonymized shuffled candidates, agent self-references redacted",
+ "harness_means": {
+  "gridpath": 5.3,
+  "claude-code": 6.9
+ },
+ "candidates": [
+  {
+   "candidate": "cand-01",
+   "run": "runs/dh-income-statement/2026-08-17T15-23-23-cc",
+   "harness": "claude-code",
+   "judgeA_overall": 9,
+   "judgeB_overall": 9,
+   "mean_overall": 9.0
+  },
+  {
+   "candidate": "cand-05",
+   "run": "runs/dh-income-statement/2026-08-17T02-04-56-cc",
+   "harness": "claude-code",
+   "judgeA_overall": 7,
+   "judgeB_overall": 7.5,
+   "mean_overall": 7.25
+  },
+  {
+   "candidate": "cand-07",
+   "run": "runs/dh-income-statement/2026-08-17T23-44-14-gridpath",
+   "harness": "gridpath",
+   "judgeA_overall": 7,
+   "judgeB_overall": 6,
+   "mean_overall": 6.5
+  },
+  {
+   "candidate": "cand-10",
+   "run": "runs/dh-income-statement/2026-08-17T17-27-11-cc",
+   "harness": "claude-code",
+   "judgeA_overall": 6,
+   "judgeB_overall": 6.5,
+   "mean_overall": 6.25
+  },
+  {
+   "candidate": "cand-02",
+   "run": "runs/dh-income-statement/2026-08-17T16-03-41-cc",
+   "harness": "claude-code",
+   "judgeA_overall": 6,
+   "judgeB_overall": 6,
+   "mean_overall": 6.0
+  },
+  {
+   "candidate": "cand-03",
+   "run": "runs/dh-income-statement/2026-08-17T16-43-13-cc",
+   "harness": "claude-code",
+   "judgeA_overall": 6,
+   "judgeB_overall": 6,
+   "mean_overall": 6.0
+  },
+  {
+   "candidate": "cand-04",
+   "run": "runs/dh-income-statement/2026-08-17T23-17-54-gridpath",
+   "harness": "gridpath",
+   "judgeA_overall": 6,
+   "judgeB_overall": 5.5,
+   "mean_overall": 5.75
+  },
+  {
+   "candidate": "cand-09",
+   "run": "runs/dh-income-statement/2026-08-18T00-16-13-gridpath",
+   "harness": "gridpath",
+   "judgeA_overall": 5,
+   "judgeB_overall": 5,
+   "mean_overall": 5.0
+  },
+  {
+   "candidate": "cand-08",
+   "run": "runs/dh-income-statement/2026-08-18T00-33-35-gridpath",
+   "harness": "gridpath",
+   "judgeA_overall": 5,
+   "judgeB_overall": 4.5,
+   "mean_overall": 4.75
+  },
+  {
+   "candidate": "cand-06",
+   "run": "runs/dh-income-statement/2026-08-18T01-16-38-gridpath",
+   "harness": "gridpath",
+   "judgeA_overall": 5,
+   "judgeB_overall": 4,
+   "mean_overall": 4.5
+  }
+ ]
+}

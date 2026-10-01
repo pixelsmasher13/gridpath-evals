@@ -1,0 +1,16 @@
+{
+  "task": "fixture-model-edit",
+  "harness": "claude-code",
+  "model": "claude-sonnet-5",
+  "wall_ms": 93815,
+  "num_turns": 15,
+  "duration_ms": 92845,
+  "total_cost_usd": 1.0629959999999998,
+  "usage": {
+    "input_tokens": 3601,
+    "output_tokens": 8700,
+    "cache_read_input_tokens": 581830,
+    "cache_creation_input_tokens": 53587,
+    "web_search_requests": 0
+  }
+}

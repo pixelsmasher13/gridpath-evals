@@ -1,0 +1,75 @@
+{
+  "task": "fixture-add-year",
+  "output": "runs/fixture-add-year/2026-09-30T18-24-16-cc-mcp/output.xlsx",
+  "recalc": true,
+  "counts": {
+    "pass": 9,
+    "fail": 0,
+    "warn": 0
+  },
+  "results": [
+    {
+      "status": "pass",
+      "detail": "Model!row 6",
+      "type": "label_exists",
+      "label": "FY2029E",
+      "why": "header added"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 7 \"Revenue\" \u2192 14315.3143168",
+      "type": "label_value",
+      "label": "^Revenue$",
+      "why": "FY2029E revenue = FY2028E * (1+4g)"
+    },
+    {
+      "status": "pass",
+      "detail": "Model!row 10 \"Gross margin\" \u2192 0.380019398642095",
+      "type": "label_value",
+      "label": "^Gross margin$",
+      "why": "margin formula carried"
+    },
+    {
+      "status": "pass",
+      "detail": "20 formula cells",
+      "type": "min_formula_cells",
+      "label": "",
+      "why": "four new formula cells"
+    },
+    {
+      "status": "pass",
+      "detail": "all 16 original parts survive",
+      "type": "parts_preserved",
+      "label": "",
+      "why": "fidelity"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/worksheets/sheet2.xml contains /conditionalFormatting/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "CF survives"
+    },
+    {
+      "status": "pass",
+      "detail": "xl/worksheets/sheet2.xml contains /dataValidation/i",
+      "type": "part_contains",
+      "label": "",
+      "why": "DV survives"
+    },
+    {
+      "status": "pass",
+      "detail": "parsed: 2 sheets",
+      "type": "file_opens",
+      "label": "",
+      "why": "valid workbook"
+    },
+    {
+      "status": "pass",
+      "detail": "no error values",
+      "type": "no_error_cells",
+      "label": "",
+      "why": "no errors introduced"
+    }
+  ]
+}
